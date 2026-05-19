@@ -3,8 +3,8 @@ const participantsSlides = document.querySelector('.participants-list__slides');
 
 const participantSlideCount = document.getElementById("participants-list").children?.length;
 
-const prevButtonParticipants = document.getElementById("prev");
-const nextButtonParticipants = document.getElementById("next");
+const prevButtonParticipants = document.getElementById("prev2");
+const nextButtonParticipants = document.getElementById("next2");
 
 const slider = document.querySelector('.participants-list');
 
@@ -14,11 +14,18 @@ let currentIndexP = 0;
 const firstClone = participantsSlides.children[0].cloneNode(true);
 const lastClone = participantsSlides.children[participantsSlides.children.length - 1].cloneNode(true);
 
+const а1 = participantsSlides.cloneNode(true);
 participantsSlides.appendChild(firstClone);
-participantsSlides.insertBefore(lastClone, participantsSlides[0]);
+const а2 = participantsSlides.cloneNode(true);
+participantsSlides.insertBefore(lastClone, participantsSlides.children[0]); //перед нулевым (Капабланкой)
+const а3 = participantsSlides.cloneNode(true);
 
 const allSlides = Array.from(participantsSlides.children);
-const totalSlides = allSlides.length;
+const totalSlides = allSlides.length;   // 8
+console.log('allSlides', allSlides);
+console.log('totalSlides', totalSlides);
+
+const sliderContent = document.getElementById("slider-buttons__content");
 
 const updatePosition = (animate = true) => {
   if (!animate) {
@@ -28,10 +35,19 @@ const updatePosition = (animate = true) => {
   }
 
   const totalWidth = 394; // 2364
-  
+
   const offset = -currentIndexP * totalWidth;
   participantsSlides.style.transform = `translateX(${offset}px)`;
+  updateTextContent(currentIndexP);
 };
+
+const updateTextContent = (index) => {
+  if (index % 6 === 0 ) {
+    sliderContent.textContent = participantSlideCount + " / " + participantSlideCount;
+  } else {
+    sliderContent.textContent = index % 6 + " / " + participantSlideCount;
+  }
+}
     
 currentIndexP = 1;
 updatePosition(false);
@@ -65,21 +81,21 @@ const prev = () => {
 }
 
 prevButtonParticipants.addEventListener('click', () => {
-  next();
-});
-
-nextButtonParticipants.addEventListener('click', () => {
   prev();
 });
 
-function startAutoPlay() {
+nextButtonParticipants.addEventListener('click', () => {
+  next();
+});
+
+function startAutoPlay() { 
   autoPlayInterval = setInterval(() => {
     next();
   }, 4000);
 }
 
 function stopAutoPlay() {
-    clearInterval(autoPlayInterval);
+  clearInterval(autoPlayInterval);
 }
 
 startAutoPlay();
