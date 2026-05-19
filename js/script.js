@@ -22,8 +22,6 @@ const а3 = participantsSlides.cloneNode(true);
 
 const allSlides = Array.from(participantsSlides.children);
 const totalSlides = allSlides.length;   // 8
-console.log('allSlides', allSlides);
-console.log('totalSlides', totalSlides);
 
 const sliderContent = document.getElementById("slider-buttons__content");
 
@@ -34,7 +32,7 @@ const updatePosition = (animate = true) => {
   participantsSlides.style.transition = 'transform 0.3s ease';
   }
 
-  const totalWidth = 394; // 2364
+  const totalWidth = participantsSlides.getBoundingClientRect().width / participantSlideCount
 
   const offset = -currentIndexP * totalWidth;
   participantsSlides.style.transform = `translateX(${offset}px)`;
