@@ -663,7 +663,7 @@ img {
   .transformation-list__group {
     height: 300px;
     width: 335px;
-    background-image: url(/images/background-card.png);
+    background-image: url(../images/background-card.png);
     background-size: cover;
     gap: 0;
     padding-top: 42px;
