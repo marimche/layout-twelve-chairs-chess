@@ -182,7 +182,7 @@ img {
   box-sizing: border-box;
   margin-top: -65px;
   padding: 124px 0 132px 0;
-  background-image: url("/images/city.png"), url("/images/main-background.jpg");
+  background-image: url("../images/city.png"), url("../images/main-background.jpg");
   background-repeat: no-repeat, repeat;
   background-position: center;
 }
@@ -347,7 +347,7 @@ img {
 }
 
 .transformation-list__card {
-  background-image: url("/images/background-card.png");
+  background-image: url("../images/background-card.png");
   background-size: cover;
   font-weight: 500;
   padding: 20px;
