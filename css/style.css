@@ -770,7 +770,7 @@ img {
     box-sizing: border-box;
     margin-top: -65px;
     padding: 124px 0 132px 0;
-    background-image: url("/images/main-screen.jpg");
+    background-image: url("../images/main-screen.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
