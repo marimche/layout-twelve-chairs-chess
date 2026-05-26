@@ -585,6 +585,10 @@ img {
     max-width: 286px;
   }
 
+  .transformation-list p {
+    font-size: 18px;
+  }
+
   .transformation__img {
     width: 250px;
     left: 660px;
@@ -834,10 +838,6 @@ img {
 
   .transformation-list {
     margin-top: -100px;
-  }
-
-  .transformation-list p {
-    font-size: 18px;
   }
 
   .transformation__img {
