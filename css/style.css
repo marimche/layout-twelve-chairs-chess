@@ -609,6 +609,10 @@ img {
     border: 2px solid #FFFFFF;
   }
 
+  .container {
+    padding: 0 20px;
+  }
+
   .session__img {
     width: 200px;
   }
@@ -735,10 +739,14 @@ img {
   }
 
   .participants-list {
-    width: 394px;
+    width: 375px;
     overflow: hidden;
     position: relative;
     margin: 40px 0 40px 0;
+  }
+
+  .participants-list__card {
+    width: 375px;
   }
 
   .participants-list__slides {
