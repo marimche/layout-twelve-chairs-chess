@@ -678,7 +678,9 @@ img {
   }
 
   .group-1_2 .transformation-list__card {
-    flex-basis: 100%;
+    flex-basis: 50%;
+    flex-shrink: 1;
+    flex-grow: 1;
   }
 
   .group-4_5 {
@@ -830,8 +832,12 @@ img {
     gap: 24px;
   }
 
-   .transformation-list {
+  .transformation-list {
     margin-top: -100px;
+  }
+
+  .transformation-list p {
+    font-size: 18px;
   }
 
   .transformation__img {
