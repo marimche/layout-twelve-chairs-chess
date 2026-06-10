@@ -27,7 +27,7 @@ ________________________________________________________________________________
 ![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-Adaptive landing pages for chess club created as part of a test assignment based on the Figma layout.
+Adaptive landing page for chess club created as part of a test assignment based on the Figma layout.
 
 [View project](https://marimche.github.io/layout-twelve-chairs-chess/)
 
@@ -35,7 +35,7 @@ Adaptive landing pages for chess club created as part of a test assignment based
 * **HTML5** / **CSS3**
 * **BEM**
 * **JavaScript** (for slider)
-* **Adaptive design** (desktop-first, от $1366\text{px}$ до $375\text{px}$)
+* **Adaptive design** (desktop-first, from $1366\text{px}$ to $375\text{px}$)
 
 ### ✨ Layout features
 * **Cross-browser compatibility:** correct display in all modern browsers.
